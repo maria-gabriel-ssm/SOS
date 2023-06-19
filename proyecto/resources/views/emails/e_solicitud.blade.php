@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="font-family: sans-serif;">
+    <div style="display: block; margin: auto; max-width: 600px;" class="main">
+      <h1 style="font-size: 18px; font-weight: bold; margin-top: 20px">Nueva solicitud de cancelación/reagendación</h1>
+      <p>El usuario ha solicitado un cambio en la conferencia.</p>
+      <ul style="padding-left: 10px;">
+      	<li><b>Nombre:</b> {{$usuario->nombreCompleto}}</li>
+      	<li><b>Usuario:</b> {{$usuario->username}}</li>
+        <li><b>Código:</b> VSSM-{{$conferencia->id}}</li>
+      	<li><b>Conferencia:</b> {{$conferencia->nombre}}</li>
+      	<li><b>Comentarios:</b> {{$usuario->area}}</li>
+      </ul>
+      <p>Ingresa a la plataforma para darle seguimiento: <a href="https://www.ssm.gob.mx/SOS/conferencias">www.ssm.gob.mx/SOS/conferencias</a></p>
+      <img alt="Inspect with Tabs" src="https://www.ssm.gob.mx/portal/img/ssm_logo_OK.png" style="width: 50%;">
+      <p>© Servicios de Salud Morelos</p>
+    </div>
+  </body>
+</html>
